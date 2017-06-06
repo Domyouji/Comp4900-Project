@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Crop Ontology Search</title>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container text-left">
+			    <h2>
+					<a href="./" class="logo">Crop Ontology Search</a>
+			    </h2>      
+				<a href="./category.html">
+					<input type="button" class="btn btn-success" value="Category Page" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<input id="term" type="text" name="term" placeholder="e.g. stem, soybean">
+				<input id="search" type="button" class="btn btn-info" value="Search">   
+<!-- 				<a href="./category.html">
+				   <input type="button" class="btn btn-success" value="Category Page" />
+				</a> -->
+				</br></br>
+				<div id = "tbl_len"></div>
+				<table id="result" class="table table-sm" style="display: none;">									
+					<thead>
+						<tr>
+							<th>#   </th>
+							<th>ID</th>
+							<th>Trait name</th>
+							<th>Ontology name</th>
+						</tr>
+					</thead>
+					<tbody id ="tbl_body"></tbody>						
+				</table>
+			</div>
+			<div class="col-md-6">
+				</br>
+				<div id="details" style="display: none;">
+					<div><h3>Attribute Details</h3></div>
+					<table id="attributes" class="table table-sm"></table>						
+				</div>
+			</div>
+		</div>
+	</div>
+	</br></br></br></br>
+</body>
+
+<!-- <footer class="footer navbar-fixed-bottom">
+	<div class="container" id="footer">
+		<p>
+			<em>Copyright &copy;2017 BCIT COMP 4900</em>
+		</p>
+
+	</div>
+</footer> -->
+
+<script type="text/javascript" src="./js/search.js?v=4"></script>
+<style type="text/css">
+	.logo{
+		text-decoration: none !important;
+	}
+	#result td:nth-child(2){		
+		color: cornflowerblue;
+	}
+	th, thead,td {
+		border: 2px solid #ddd;
+	}
+	.s:hover {
+		background-color: #f1f1f1;
+		text-decoration-line: underline;
+	}
+/*	#footer{
+		background-color: #eee;
+	}*/
+
+</style>
+</html>
